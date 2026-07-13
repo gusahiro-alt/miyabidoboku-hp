@@ -83,6 +83,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 20px 0;
+  background: var(--c-cream);
   transition: background 0.4s var(--ease), padding 0.4s var(--ease);
 }
 .header.is-scrolled {
