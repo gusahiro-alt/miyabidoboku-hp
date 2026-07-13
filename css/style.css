@@ -247,7 +247,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 }
 .hero__cross-v {
   position: absolute;
-  top: -60px; bottom: -60px;
+  top: 96px; bottom: -60px;
   left: 8%;
   width: 160px;
   background: rgb(0, 85, 255);
