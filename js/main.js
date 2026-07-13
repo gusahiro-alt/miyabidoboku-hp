@@ -246,6 +246,16 @@ gsap.utils.toArray('.bcard__photo').forEach((el) => {
   start();
 })();
 
+/* Blue cross 呼吸 (subtle scale pulse) — フィルター除去済みなので滑らか */
+gsap.to('.hero__cross-h, .hero__cross-v', {
+  scale: 1.025,
+  duration: 3.5,
+  ease: 'sine.inOut',
+  yoyo: true,
+  repeat: -1,
+  transformOrigin: 'center center'
+});
+
 /* Parallax on hero cross */
 gsap.to('.hero__cross-h', {
   yPercent: 15, ease: 'none',

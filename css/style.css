@@ -240,7 +240,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   height: 160px;
   background: rgb(0, 85, 255);
   mix-blend-mode: multiply;
-  filter: url(#crossFilter);
   transform: translateY(-50%) rotate(-2deg);
   transform-origin: center;
   z-index: 4;
@@ -252,7 +251,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   width: 160px;
   background: rgb(0, 85, 255);
   mix-blend-mode: multiply;
-  filter: url(#crossFilter);
   transform: rotate(-2deg);
   transform-origin: top;
   z-index: 4;
