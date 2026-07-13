@@ -87,7 +87,9 @@
 <!-- FORM -->
 <section class="form-section">
   <div class="container container--form">
-    <form class="form" id="contactForm" action="#" method="post" novalidate>
+    <form class="form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" novalidate>
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>下記は入力しないでください：<input name="bot-field"></label></p>
       <div class="form__row">
         <label class="form__label" for="f-type">お問い合わせ種別 <span class="req">必須</span></label>
         <div class="form__field">
@@ -152,8 +154,8 @@
       </div>
 
       <p class="form__note">
-        ※ 送信後、確認メールが自動送信されます。<br>
-        ※ 内容を確認のうえ、2営業日以内にご返信いたします。
+        ※ 送信いただいた内容は担当者が確認し、2営業日以内にご返信いたします。<br>
+        ※ お急ぎの場合はお電話（022-376-3343）でもご連絡いただけます。
       </p>
     </form>
   </div>
@@ -305,12 +307,11 @@
       }
       return;
     }
-    // 検証OK（本番はここでContact Form 7 / サーバー送信に置換）
+    // 検証OK → Netlify Forms へ送信（成功後 /thanks.html にリダイレクト）
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '送信しました ✓';
-    form.querySelectorAll('input, textarea').forEach(el => el.setAttribute('readonly', ''));
-    alert('送信を受け付けました。（デモ表示 / 本番ではメール送信されます）\n2営業日以内にご返信いたします。');
+    submitBtn.innerHTML = '送信中…';
+    form.submit();
   });
 
   // 入力時にエラー解除

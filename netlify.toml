@@ -1,0 +1,26 @@
+[build]
+  publish = "."
+
+# 静的アセットは長期キャッシュ
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/photos-final/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# 全ページ共通のセキュリティ／パフォーマンスヘッダー
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
