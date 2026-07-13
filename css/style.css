@@ -238,7 +238,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   left: -100px; right: -100px;
   top: 42%;
   height: 160px;
-  background: rgb(0, 85, 255);
+  background: url("../photos-final/cross-h.png") center / 100% 100% no-repeat;
   mix-blend-mode: multiply;
   transform: translateY(-50%) rotate(-2deg);
   transform-origin: center;
@@ -249,7 +249,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   top: 96px; bottom: -60px;
   left: 8%;
   width: 160px;
-  background: rgb(0, 85, 255);
+  background: url("../photos-final/cross-v.png") center / 100% 100% no-repeat;
   mix-blend-mode: multiply;
   transform: rotate(-2deg);
   transform-origin: top;
