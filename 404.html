@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ページが見つかりません｜株式会社雅土木</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&family=Barlow:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/page.css">
+<link rel="stylesheet" href="./css/premium.css">
+<style>
+.nf {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.nf__cross-h {
+  position: absolute; left: -100px; right: -100px; top: 50%; height: 140px;
+  background: var(--c-blue); transform: translateY(-50%) rotate(-3deg); z-index: 0; opacity: 0.9;
+}
+.nf__inner { position: relative; z-index: 1; }
+.nf__code {
+  font-family: var(--f-en); font-weight: 900;
+  font-size: clamp(90px, 18vw, 200px); line-height: 1;
+  color: var(--c-ink); letter-spacing: -0.02em;
+}
+.nf__title {
+  font-family: var(--f-ser); font-weight: 900;
+  font-size: clamp(22px, 3vw, 32px); margin: 20px 0 16px; color: var(--c-ink);
+}
+.nf__desc { color: var(--c-gray-500); margin-bottom: 40px; line-height: 2; }
+</style>
+</head>
+<body class="page">
+
+<header class="header is-scrolled" id="header">
+  <div class="header__inner">
+    <a href="./index.html" class="header__logo" aria-label="株式会社雅土木">
+      <span class="header__logo-mark">雅</span>
+      <span class="header__logo-lockup">
+        <span class="header__logo-prefix">株式会社</span>
+        <span class="header__logo-wordmark"></span>
+      </span>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="./about.html">雅土木について</a></li>
+        <li><a href="./business.html">事業案内</a></li>
+        <li><a href="./works.html">施工事例</a></li>
+        <li><a href="./csr.html">CSR</a></li>
+        <li><a href="./recruit.html">採用情報</a></li>
+      </ul>
+      <ul class="nav__cta">
+        <li><a href="./contact.html" class="pill pill--solid">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="header__menu" aria-label="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="nf">
+  <div class="nf__cross-h" aria-hidden="true"></div>
+  <div class="nf__inner">
+    <p class="nf__code">404</p>
+    <h1 class="nf__title">ページが見つかりません</h1>
+    <p class="nf__desc">
+      お探しのページは移動または削除された可能性があります。<br>
+      URLをご確認いただくか、トップページからお進みください。
+    </p>
+    <a href="./index.html" class="pill pill--solid pill--lg">トップページへ戻る <span class="pill__arrow">→</span></a>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="./js/anim.js"></script>
+</body>
+</html>

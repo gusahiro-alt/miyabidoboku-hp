@@ -1,0 +1,13 @@
+.DS_Store
+.claude/
+.firecrawl/
+_dev/
+photos-candidates/
+photos-to-cutout/
+wp-theme/
+serve.py
+reload.sh
+mine.jpeg
+tada.jpeg
+WORDPRESS.md
+photos-final/works/raw-*.jpg
