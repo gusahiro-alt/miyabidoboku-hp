@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://miyagidoboku.com/sitemap.xml
+Sitemap: https://miyabidoboku.com/sitemap.xml
