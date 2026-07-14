@@ -11,3 +11,6 @@ mine.jpeg
 tada.jpeg
 WORDPRESS.md
 photos-final/works/raw-*.jpg
+
+# Local Netlify folder
+.netlify
